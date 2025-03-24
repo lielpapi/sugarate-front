@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authService from './authService';
 
-const API_URL = 'http://localhost:5173/api/posts';
+const API_URL = 'http://localhost:5000/api/posts';
 
 export interface HealthMetrics {
   location?: string;
