@@ -2,7 +2,7 @@
 import axios from 'axios';
 import authService from './authService';
 
-const API_URL = 'http://localhost:5000/api/messages';
+const API_URL = 'http://localhost:4000/api/messages';
 
 export interface ChatPreview {
   userId: string;

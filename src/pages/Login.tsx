@@ -6,7 +6,7 @@ import { FcGoogle } from 'react-icons/fc';
 import authService from '../services/authService';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'http://localhost:4000/api';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -63,8 +63,8 @@ const Login = () => {
         const handleMessage = (event: MessageEvent) => {
           console.log("Received message from popup:", event);
           // Check that the message comes from your server origin.
-          // In development, your server is running at 'http://localhost:5000'
-          if (event.origin !== 'http://localhost:5000') {
+          // In development, your server is running at 'http://localhost:4000'
+          if (event.origin !== 'http://localhost:4000') {
             console.warn(`Unexpected message origin: ${event.origin}`);
             return;
           }
