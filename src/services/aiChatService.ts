@@ -18,7 +18,7 @@ export class AIChatService {
 
   constructor() {
     // Adjust the base URL if your backend is hosted elsewhere.
-    this.baseURL = 'http://localhost:5/api/ai';
+    this.baseURL = 'http://localhost:5000/api/ai';
     this.token = localStorage.getItem('token');
   }
 
